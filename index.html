@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<title>Rainbokeh</title>
+	<meta charset="UTF-8">
+	<link rel="icon" type="image/ico" href="rainbokeh.ico">
+
+	<style>
+		
+		body {
+			color: #ccc; 
+			background-color: #111111;
+		}
+
+		#hiddenBody { 
+		  	position: absolute;
+			min-height: 100%; 
+			top: 0;
+			right: 0;
+			left: 0; 
+			opacity: 0;  
+		  	background: url(rainbokeh.jpg) no-repeat center center fixed; 
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+		}
+	</style>
+
+</head>
+
+<body>
+<div id="hiddenBody"></div>
+</body>
+
+<script>
+	window.onload = function(){
+
+		var bgImg = new Image();
+		var opacity = 0; 
+		bgImg.src = 'rainbokeh.jpg';
+
+		//once the background image is availabe 
+		//start faiding everything in
+		var fadeInterval = setInterval(function() {
+			
+			if (bgImg.complete) {
+				
+				opacity = opacity + 0.1; 
+				hiddenBody.style.opacity = opacity;
+					
+				if(hiddenBody.style.opacity >= 1) {
+					clearInterval(fadeInterval);
+				}
+		   	}
+		}, 50);
+	};
+</script>
+
+</html>
