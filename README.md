@@ -5,7 +5,7 @@ A web page with a pleasant background that fades in when loaded
 
 This is a simple web page that fades in one of my favorite background
 images. It sits in a tab on one of my screens and is  used as a pleasant
-background when I'm doing something else ont the other screen. Helps cut
+background when I'm doing something else on the other screen. Helps cut
 down on distractions. This is always a pinned tab in my browser.
 
 This could be modified easily to use any picture one might want to add.
